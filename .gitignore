@@ -1,0 +1,10 @@
+# Ignore Mac system files
+.DS_store
+
+# Ignore file extensions below
+*.coverage
+*.egg-info
+*.log
+*.pyc
+
+examples/data

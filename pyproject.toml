@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ipfs-dataset"
+description = "`ipfs-dataset` is a high-performance PyTorch dataset library designed to provide direct and efficient access to datasets stored in the InterPlanetary File System (IPFS)."
+version = "1.0.0"
+authors = [
+    { name = "Soptq", email = "32592090+soptq@users.noreply.github.com" }
+]
+dependencies = [
+    "requests==2.31.0",
+    "ipfshttpclient@git+https://github.com/Soptq/py-ipfs-http-client"
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["pytorch", "dataset", "ipfs"]
+
+[project.urls]
+Repository = "https://github.com/Soptq/ipfs-dataset"
+
+[tool.hatch.metadata]
+allow-direct-references = true
